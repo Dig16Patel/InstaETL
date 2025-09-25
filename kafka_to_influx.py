@@ -4,9 +4,9 @@ import json
 from datetime import datetime
 
 # --- InfluxDB Config ---
-token = "UxZ1w2blgHNuMW4BvjxkItyfjQZyNUZ-0L1jKq1ZEQQacpfSDFLh1dApB8muHVEaSMW763OsNhSr0IkJA7tskQ=="
-org = "InstaOrg"
-bucket = "insta_metrics"
+token = "Your Token"
+org = "Your Org"
+bucket = "Your Branch"
 url = "http://localhost:8086"
 
 client = InfluxDBClient(url=url, token=token, org=org)
@@ -84,4 +84,5 @@ for message in consumer:
 
     except Exception as e:
         print(f"❌ Error processing message: {e}")
+
     
